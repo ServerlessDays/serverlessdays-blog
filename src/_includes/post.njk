@@ -1,0 +1,19 @@
+--- 
+layout: base.njk 
+---
+
+<div class="w-100 pa4 pa2-ns center f4 mt2 mt5-ns  tl">
+    <div class="w-20 pl4 pa2 absolute br b--white">
+        {% include 'sidebar.njk' %} 
+    </div>
+    <div class="mw7 markdown-body center relative">
+        <div class="w-100 center tr">
+            <div class="f5 i mb0 pb0">Last Edited: {{ post.date }}</div>
+            <div class="f5">By: {{ post.author }}</div>
+        </div>
+        {{ content | safe }}
+    </div>
+    
+</div>
+
+{% include 'footer.njk' %}

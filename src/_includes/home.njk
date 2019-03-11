@@ -1,0 +1,15 @@
+--- 
+layout: base.njk 
+---
+<div class="w-100">
+    <div class="w-100 w-80-m w-60-l center pt4">
+        <h1 class="f1 fw4">News</h1>       
+        {% include 'headlines.njk' %}
+    </div>
+</div>
+
+<div class="w-100 pa4 pa2-ns center measure-wide f4 mt2 mt5-ns markdown-body">
+    {{ content | safe }}
+</div>
+
+{% include 'footer.njk' %}

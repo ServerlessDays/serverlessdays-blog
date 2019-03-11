@@ -1,0 +1,18 @@
+
+    <div class="w-100 tl pa2 blogNav">
+        <nav class="pa2">
+            <ul class="list pa2 lh-copy">
+                {% for item in blogNav %}
+                <li>
+                    <a class="no-underline white f4" href="#">{{ item.monthYear }}</a>
+                    <ul class="list pa2 mb3 lh-copy">  
+                        {% for blog in item.blogs %}
+                        <li><a class="no-underline white f5 pa1" href="{{ blog.blogLink }}" >{{ blog.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
